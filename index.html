@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空无的主页</title>
+    <meta name="keywords" content="搜索主页,空无,主页">
+    <meta name="description" content="个人主页，欢迎使用">
+    <link rel="stylesheet" href="src/css/css.css">
+    <link rel="stylesheet" href="src/css/button-left.css">
+</head>
+
+<body id="body">
+    <div id="tp"></div>
+    <div id="time-zong">
+        <span id="time-xq" style="display: inline-block;">正在获取，请稍等</span>
+        <p id="time" style="display: inline-block;">正在获取，请稍等</p>
+        <span id="time-m" style="display: inline-block;">正在获取，请稍等</span>
+    </div>
+    <div id="ss" class="ss">
+        <input class="ss-text" id="input" type="text" placeholder="搜索一下吧" autocomplete="off" />
+        <!-- <div class="block">
+            <input id="search">
+            <span class="btn">百度一下</span>
+        </div> -->
+    </div>
+    <div id="qh">
+        <button id="qh-baidu" class="but">百度</button>
+        <button id="qh-bing" class="but">必应</button>
+        <button id="qh-google" class="but">Google</button>
+    </div>
+    <ul id="xlk">
+        <div></div>
+    </ul>
+    <div id="yy">
+        <div id="id-yy">
+            <p class="yy-p" id="yy-p">
+                「
+                <span id="hitokoto_text" class="yy-wz"></span>
+                」
+            </p>
+            <p class="yy-p" id="yy-b">
+                出处：
+                <span id="hitokoto_cc" class="yy-wz"></span>
+            </p>
+            <p class="yy-p" id="yy-zz">
+                作者:
+                <span id="hitokoto_zz" class="yy-wz"></span>
+            </p>
+        </div>
+        <div class="yy-mh"></div>
+    </div>
+    <div class="left">
+        <div class="button-left">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="dialog">
+        <p>您使用是手机端<br>麻烦使用原版Chrome内核的浏览器<br>由于一些魔改的Chrome内核导致不兼容<br>可能会出现致命错误</p>
+        <p>5秒后自动关闭</p>
+    </div>
+    <button id="toggle-button">夜间模式</button>
+    <div class="Pop_up">
+        <div class="Pop_up_content">
+            <div class="Pop_up_content_introduce" id="introduce0">
+                <p>空无的网站</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://kongwu233.gitee.io" target="_blank">
+                    <img src="./img/ico/kongwu233.gitee.io.png">
+                    <p>空无的博客</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">空无的博客</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://kongwu233.gitee.io/ziyuan/#" target="_blank">
+                    <img src="./img/ico/web.png">
+                    <p>空无的资源小站</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">空无的资源小站</div>
+            </div>
+
+            <div class="Pop_up_content_introduce" id="introduce1">
+                <p>在线看番</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://bgmlist.com" target="_blank">
+                    <img src="./img/ico/bgmlist.com.ico">
+                    <p>番组推送</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">番组推送[查看番剧更新]</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://agefans.cc" target="_blank">
+                    <img src="./img/ico/www.agefans.cc.ico">
+                    <p>AGE</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">AGE</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="http://www.imomoe.la" target="_blank">
+                    <img src="./img/ico/www.imomoe.la.ico">
+                    <p>樱花动漫</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">樱花动漫</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://ani.gamer.com.tw" target="_blank">
+                    <img src="./img/ico/ani.gamer.com.tw.ico">
+                    <p>巴哈姆特動畫瘋</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">巴哈姆特動畫瘋[仅限台湾地区ip可用]</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://www.acfun.cn" target="_blank">
+                    <img src="./img/ico/www.acfun.cn.ico">
+                    <p>AcFun</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">AcFun</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://www.bilibili.com" target="_blank">
+                    <img src="./img/ico/www.bilibili.com.ico">
+                    <p>bilibili</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">bilibili</div>
+            </div>
+
+            <div class="Pop_up_content_introduce" id="introduce2">
+                <p>动漫下载</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://assrt.net" target="_blank">
+                    <img src="./img/ico/assrt.net.ico">
+                    <p>射手网(伪)</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">射手网(伪)[字幕下载]</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://share.dmhy.org" target="_blank">
+                    <img src="./img/ico/share.dmhy.org.ico">
+                    <p>动漫花园</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">动漫花园</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="http://www.kisssub.org" target="_blank">
+                    <img src="./img/ico/kisssub.org.ico">
+                    <p>爱恋动漫BT下载</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">爱恋动漫BT下载</div>
+            </div>
+
+            <div class="Pop_up_content_introduce" id="introduce3">
+                <p>教程</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://www.runoob.com" target="_blank">
+                    <img src="./img/ico/www.runoob.com.ico">
+                    <p>菜鸟教程</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">菜鸟教程</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://www.bootcss.com" target="_blank">
+                    <img src="./img/ico/www.bootcss.com.ico">
+                    <p>Bootstrap</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">前端css框架</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://developer.mozilla.org" target="_blank">
+                    <img src="./img/ico/developer.mozilla.org.png">
+                    <p>MDN</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">MDN</div>
+            </div>
+
+            <div class="Pop_up_content_introduce" id="introduce4">
+                <p>官网文档</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://developers.weixin.qq.com/miniprogram/dev/framework" target="_blank">
+                    <img src="./img/ico/developers.weixin.qq.com.ico">
+                    <p>微信小程序</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">微信小程序</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://cn.vuejs.org" target="_blank">
+                    <img src="./img/ico/cn.vuejs.org.png">
+                    <p>vue</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">vue</div>
+            </div>
+
+            <div class="Pop_up_content_introduce" id="introduce5">
+                <p>搜索引擎</p>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://www.baidu.com" target="_blank">
+                    <img src="./img/ico/www.baidu.com.ico">
+                    <p>百度</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">百度</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://bing.com" target="_blank">
+                    <img src="./img/ico/bing.com.ico">
+                    <p>bing</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">bing</div>
+            </div>
+            <div class="Pop_up_content_detailed">
+                <a href="https://google.com" target="_blank">
+                    <img src="./img/ico/google.com.ico">
+                    <p>google</p>
+                </a>
+                <div class="Pop_up_content_detailed_div">google</div>
+            </div>
+        </div>
+        <div class="Pop_up_content_navigation">
+            <div class="Pop_up_content_navigation_introduce">
+                <p>空无的网站</p>
+            </div>
+            <div class="Pop_up_content_navigation_introduce">
+                <p>在线看番</p>
+            </div>
+            <div class="Pop_up_content_navigation_introduce">
+                <p>动漫下载</p>
+            </div>
+            <div class="Pop_up_content_navigation_introduce">
+                <p>教程</p>
+            </div>
+            <div class="Pop_up_content_navigation_introduce">
+                <p>官方文档</p>
+            </div>
+            <div class="Pop_up_content_navigation_introduce">
+                <p>搜索引擎</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="src/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="src/js/js.js"></script>
+<script src="src/js/tp.js"></script>
+<!-- <script src="src/js/Browser.js"></script> -->
+<script src="src/js/ssms.js"></script>
+<script src="src/js/ss.js"></script>
+<script src="src/js/onload.js"></script>
+
+</html>

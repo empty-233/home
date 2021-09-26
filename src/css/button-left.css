@@ -1,0 +1,56 @@
+.left {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 99;
+}
+
+.button-left {
+    /* position: relative; */
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /* background-color: transparent; */
+}
+
+.button-left span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 9px;
+    background-color: var(--pink);
+    /* opacity: 1; */
+    transition: all 0.3s ease-in-out;
+}
+
+.button-left span:nth-child(1) {
+    top: 0;
+}
+
+.button-left span:nth-child(4) {
+    bottom: 0;
+}
+
+.button-left.open span:nth-child(1) {
+    top: 14px;
+    width: 0;
+}
+
+.button-left.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.button-left.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.button-left.open span:nth-child(4) {
+    bottom: 14px;
+    width: 0;
+}
