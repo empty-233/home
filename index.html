@@ -9,6 +9,7 @@
     <meta name="description" content="个人主页，欢迎使用">
     <link rel="stylesheet" href="src/css/css.css">
     <link rel="stylesheet" href="src/css/button-left.css">
+    <link rel="stylesheet" href="src/css/switch.css">
 </head>
 
 <body id="body">
@@ -65,6 +66,23 @@
     </div>
     <button id="toggle-button">夜间模式</button>
     <div class="Pop_up">
+        <div class="site">
+            <div class="site_img_div">
+                <img src="./img/site.png" class="site_img">
+            </div>
+            <div class="site_div">
+                <div class="site_switch">
+                    <span>自动切换背景</span></span>
+                    <label><input class="mui-switch mui-switch-anim" type="checkbox" checked></label>
+                </div>
+                <div class="site_input">
+                    <p>自定义背景图片</p>
+                    <input required="required" type="text"
+                        placeholder="https://drive.kongwu.top/image/pixiv?random=jpg">
+                    <button>提交</button>
+                </div>
+            </div>
+        </div>
         <div class="Pop_up_content">
             <div class="Pop_up_content_introduce" id="introduce0">
                 <p>空无的网站</p>
