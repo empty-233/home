@@ -208,3 +208,13 @@ $(".Pop_up_content_navigation_introduce").click(function () {
     500
   );
 });
+
+$('.site_img').click(function () {
+  if ($('.site_img').css('transform') == 'none') {
+    $('.site_img').css('transform', 'rotate(90deg)')
+    $('.site_div').show(300)
+  } else {
+    $('.site_img').css('transform', '')
+    $('.site_div').hide(300)
+  }
+})
