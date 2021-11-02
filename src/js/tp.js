@@ -35,15 +35,20 @@ function checkUrl(URL) {
 
 function url() {
     let value = $('.site_input>input').val()
-    value = localStorage.getItem('background_image')
+    if (localStorage.getItem('background_image') != null) {
+        value = localStorage.getItem('background_image')
+    }
     if (value == '') {
         value = 'https://drive.kongwu.top/image/pixiv?random=jpg'
+        console.log('123');
     }
+    localStorage.setItem('background_image', value)
     clearInterval(set)
     if (checkUrl(value)) {
         $('#tp').append('<img src="' + value + '" class="tpImg">')
         localStorage.setItem('background_image', value)
     } else {
+        console.log(checkUrl(value));
         alert('请输入正确的url')
     }
     if ($('#tp img').length > 1) {
