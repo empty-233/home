@@ -40,7 +40,6 @@ function url() {
     }
     if (value == '') {
         value = 'https://drive.kongwu.top/image/pixiv/?random=jpg'
-        console.log('123');
     }
     localStorage.setItem('background_image', value)
     clearInterval(set)
