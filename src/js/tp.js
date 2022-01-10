@@ -39,13 +39,13 @@ function url() {
         value = localStorage.getItem('background_image')
     }
     if (value == '') {
-        value = 'https://drive.kongwu.top/image/pixiv?random=jpg'
+        value = 'https://drive.kongwu.top/image/pixiv/?random=jpg'
         console.log('123');
     }
     localStorage.setItem('background_image', value)
     clearInterval(set)
     if (checkUrl(value)) {
-        $('#tp').append('<img src="' + value + '" class="tpImg">')
+        $('#tp').append('<img src="' + value + '" class="tpImg" >')
         localStorage.setItem('background_image', value)
     } else {
         console.log(checkUrl(value));
@@ -75,13 +75,3 @@ $('.mui-switch').eq(0).click(function () {
 $('.site_input>button').click(function () {
     url()
 })
-if (localStorage.getItem('background') == 'true' || localStorage.getItem('background') == null) {
-    $('.mui-switch').eq(0).prop('checked', true)
-    $('.site_input').hide(500)
-    img()
-}
-if (localStorage.getItem('background') != 'true' && localStorage.getItem('background') != null) {
-    $('.mui-switch').eq(0).prop('checked', false)
-    url()
-    $('.site_input').show(500)
-}

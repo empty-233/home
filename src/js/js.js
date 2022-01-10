@@ -117,9 +117,6 @@ $(function () {
   document.getElementById('input').select()
 });
 
-setInterval(function () {
-  yySx();
-}, 10000);
 id("id-yy").onclick = function () {
   yySx();
 };
@@ -212,9 +209,9 @@ $(".Pop_up_content_navigation_introduce").click(function () {
 $('.site_img').click(function () {
   if ($('.site_img').css('transform') == 'none') {
     $('.site_img').css('transform', 'rotate(90deg)')
-    $('.site_div').show(300)
+    $('.site_div').css('transform','scale(1)')
   } else {
     $('.site_img').css('transform', '')
-    $('.site_div').hide(300)
+    $('.site_div').css('transform','scale(0)')
   }
 })
