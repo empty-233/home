@@ -1,10 +1,10 @@
-window.onload = function () {
+$(document).ready(function () {
     setTimeout(function () {
         $("#tp").css("opacity", '1')
         $("#time-zong").css("opacity", '1')
         $("#yy").css("opacity", '1')
         $("#qh").css("opacity", '1')
-    }, 500)
+    }, 800)
     var oQ = document.getElementById('input');
     oQ.onkeyup = function () {
         if (encodeURIComponent(this.value) != '') {
@@ -21,4 +21,4 @@ window.onload = function () {
         resize();
     }
     backdrop();
-}
+})
